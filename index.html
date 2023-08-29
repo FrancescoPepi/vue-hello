@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- MY STYLE -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- MY JS -->
+    <script src="main.js" defer></script>
+
+    <!-- VUE 3 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>{{ message }}</h1>
+      <input type="text" v-model="message" />
+
+      <div>
+        <button type="button" @click="visible()">{{ visibleImg }}</button>
+      </div>
+      <div>
+        <img :src="src" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
